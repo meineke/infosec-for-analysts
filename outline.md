@@ -13,6 +13,7 @@ All of this is subject to change; your feedback is welcome.
 * Alice, Bob, and Eve
 * Symmetric and asymmetric encryption
 * Basics of key exchange algorithms
+* Keeping track of what's secret, and from whom
 * What does it take to attack encryption?
 
 ### Day 3: End-user security for analysts
@@ -22,6 +23,11 @@ All of this is subject to change; your feedback is welcome.
 * What two-factor auth can and cannot do
 * The passwordless future, supposedly
 * Why all this counts double for data professionals
+
+### Day 4: Advanced secret management for analysts and coders
+* How to use public key authentication without leaking your private key
+* Keeping API tokens and other secrets out of your code
+* Environment variables
 
 ### Day 4: Software supply chain attacks
 * How third-party compromises become your problem
