@@ -13,6 +13,7 @@ All of this is subject to change; your feedback is welcome.
 * Alice, Bob, and Eve
 * Basics of encryption algorithms, key exchange algorithms, and cryptosystems
 * Keeping track of what's secret, and from whom
+* Encryption vs. hashing, strong vs. weak, fast vs. slow
 * What does it take to attack encryption?
 
 ### Day 3: End-user security for analysts
