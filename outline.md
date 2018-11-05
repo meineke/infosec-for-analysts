@@ -11,8 +11,7 @@ All of this is subject to change; your feedback is welcome.
 
 ### Day 2: Fundamentals of cryptography
 * Alice, Bob, and Eve
-* Symmetric and asymmetric encryption
-* Basics of key exchange algorithms
+* Basics of encryption algorithms, key exchange algorithms, and cryptosystems
 * Keeping track of what's secret, and from whom
 * What does it take to attack encryption?
 
@@ -24,16 +23,17 @@ All of this is subject to change; your feedback is welcome.
 * The passwordless future, supposedly
 * Why all this counts double for data professionals
 
-### Day 4: Advanced secret management for analysts and coders
-* How to use public key authentication without leaking your private key
+### Day 4: Intermediate secret management for analysts
+* How to use key authentication without leaking your private key
 * Keeping API tokens and other secrets out of your code
-* Environment variables
+* Pros and cons of various places to keep secrets in deployable code
 
-### Day 4: Software supply chain attacks
+### Day 5: Software supply chain attacks
 * How third-party compromises become your problem
-* Yes, this happens in the real world, and it's bad
 * All the iffy stuff that happens when you `pip install`
+* Ad blocking is mandatory for security
 * Mitigating risk by separating roles, lowering trust, and running less software
+* Heuristics for assessing third-party trustworthiness
 
 ### Day TBD: Regulatory compliance vs. security
 * How regulatory frameworks for data security generally work
