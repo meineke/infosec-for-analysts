@@ -8,7 +8,7 @@
 
 ---
 
-#### Day 1: Introduction and scoping
+#### Day 1: Problem statement and conceptual framework
 
 @ul
 
@@ -40,12 +40,9 @@
 
 @ul
 
-- A baseline threat model for everybody:
-    Hacking is programmatic
-- How credentials actually get hacked:
-    Data dumps, credential stuffing, phishing
-- Stop putting it off: make your life easier
-    with a password management makeover
+- A baseline threat model for everybody: Hacking is programmatic
+- How credentials actually get hacked: Data dumps, credential stuffing, phishing
+- Stop putting it off: make your life easier with a password management makeover
 - The passwordless future, supposedly
 - Why all this counts double for data professionals
 
@@ -57,12 +54,9 @@
 
 @ul
 
-- How to use key authentication without
-    leaking your private key
-- Keeping API tokens and other secrets
-    out of your code and off GitHub
-- Pros and cons of various places to keep
-    secrets in deployable code
+- How to use key authentication without leaking your private key
+- Keeping API tokens and other secrets out of your code and off GitHub
+- Pros and cons of various places to keep secrets in deployable code
 
 @ulend
 
@@ -73,13 +67,10 @@
 @ul
 
 - How third-party hacks become your problem
-- All the iffy stuff that happens when you
-    `pip install`
+- All the iffy stuff that happens when you `pip install`
 - Ad blocking is mandatory for security
-- Mitigating risk by separating roles,
-    lowering trust, and running less software
-- Heuristics for assessing third-party
-    trustworthiness
+- Mitigating risk by separating roles, lowering trust, and running less software
+- Heuristics for assessing third-party trustworthiness
 
 @ulend
 
@@ -101,11 +92,11 @@
 
 @ul
 
-- How regulatory frameworks for data security
-    generally work
+- How regulatory frameworks for data security generally work
 - What HIPAA-HITECH does and doesn't do
 - How is GDPR changing things, and where?
 - Disclosing breaches and other compromises
+
 @ulend
 
 ---
