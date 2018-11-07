@@ -115,6 +115,10 @@ A threat model is a way of systematizing your security thinking. It starts with 
 
 @ulend
 
+---
+
+#### Threat models and risk assessment
+
 An additional question that will keep coming back is:
 
 @ul
@@ -143,14 +147,38 @@ There are many more than these, but I propose we focus on
     - credential stuffing
     - exposed secrets
     - social engineering
+    
+@ulend
+
+---
+
+#### Threat typology
+
+There are many more than these, but I propose we focus on
+
+@ul
+
 - Design failures
     - open-by-default
     - open-by-design
     - security through obscurity
+
+@ulend
+
+---
+
+#### Threat typology
+
+There are many more than these, but I propose we focus on
+
+@ul
+
 - Software supply chain attacks
     - code repository compromise (pip, npm, CRAN, GitHub)
     - upstream patching
     - watering hole attacks
+
+@ulend
 
 ---
 
@@ -163,3 +191,4 @@ There are many more than these, but I propose we focus on
 - Most data breaches are caused by easily fixable problems
 - It's your job too now
 
+@ulend
