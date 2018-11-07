@@ -115,7 +115,21 @@ A threat model is a way of systematizing your security thinking. It starts with 
 
 @ulend
 
+An additional question that will keep coming back is:
+
+@ul
+
+- Who do you trust?
+
+@ulend
+
 ---
+
+#### Threat models and risk assessment
+
+
+
+
 
 #### 
 
