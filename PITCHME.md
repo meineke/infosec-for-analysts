@@ -100,9 +100,22 @@
 @ulend
 
 ---
-#### Case study: the 2016 Uber hack
+
+#### Threat models and risk assessment
+
+A threat model is a way of systematizing your security thinking. It starts with a risk assessment:
+
+@ul
+
+- What do you need to protect?
+- Who do you need to protect it from?
+- How likely is it that you'll need to protect it?
+- How bad are the consequences if you fail?
+- How much trouble are you willing to go to to avoid those consequences?
+
+@ulend
 
 ---
 
+#### 
 
-### 
