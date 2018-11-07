@@ -125,7 +125,21 @@ An additional question that will keep coming back is:
 
 ---
 
-#### Threat models and risk assessment
+#### Threat typology
+
+There are many more than these, but I propose we focus on
+
+@ul
+
+- Credential-based attacks
+    - phishing
+    - credential stuffing
+    - exposed secrets
+    - social engineering
+- Software supply chain attacks
+    - code repository compromise (pip, npm, CRAN, GitHub)
+    - upstream patching
+    - watering hole attacks
 
 
 
