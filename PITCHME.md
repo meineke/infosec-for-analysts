@@ -1,14 +1,14 @@
-# Infosec for Data Analysts
+## Infosec for Data Analysts
 
-## Introduction and Scoping
-
----
-
-![Image](img/Click-Here.jpg)
+### Introduction and Scoping
 
 ---
 
-## Case study: the 2016 Uber hack
+![Click-Here](img/Click-Here.jpg)
+
+---
+
+#### Case study: the 2016 Uber hack
 
 ---
 
