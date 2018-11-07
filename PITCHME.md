@@ -125,6 +125,13 @@ An additional question that will keep coming back is:
 
 ---
 
+#### Threat models and risk assessment
+
+Once you have an explicit risk assessment, you can weigh the relative importance
+of the various risks you face and figure out a mitigation strategy or *security model*
+
+---
+
 #### Threat typology
 
 There are many more than these, but I propose we focus on
@@ -136,14 +143,23 @@ There are many more than these, but I propose we focus on
     - credential stuffing
     - exposed secrets
     - social engineering
+- Design failures
+    - open-by-default
+    - open-by-design
+    - security through obscurity
 - Software supply chain attacks
     - code repository compromise (pip, npm, CRAN, GitHub)
     - upstream patching
     - watering hole attacks
 
+---
 
+#### Your mindset and attitude
 
+@ul
 
-
-#### 
+- Infosec professionals are more worried than everyone else, BUT
+- Security is not hopeless
+- Most data breaches are caused by easily fixable problems
+- It's your job too now
 
