@@ -4,7 +4,7 @@
 
 ---
 
-![Click-Here](img/Click-Here.jpg)
+![click-here](img/click-here-small.jpg)
 
 ---
 
