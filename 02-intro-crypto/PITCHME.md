@@ -1,5 +1,5 @@
 
-# Day 2: Fundamentals of cryptography
+## Day 2: Fundamentals of cryptography
 
 ---
 
@@ -12,14 +12,6 @@
 - What does it take to attack encryption?
 
 @ulend
-
----
-
-#### Intro: Alice, Bob, Eve
-
----
-
-(TK A,B,E slides)
 
 ---
 
@@ -71,7 +63,14 @@
 - If you have a known public key, you can prove you signed something by encrypting it with your private key
 - The receiver decrypts it with your unique public key
 
-#### Server-side and client-side encryption
+---
+
+#### Server-side and client-side
+
+- Some applications store private keys *server-side*
+    - Slack, Gmail, anything that does server-side processing
+- A few use client-side encryption so the server has zero knowledge
+    - WhatsApp, Signal
 
 ---
 
