@@ -20,6 +20,8 @@ A quick [primer](https://robertheaton.com/2014/03/27/how-does-https-actually-wor
 
 A much more complete [resource list](https://github.com/sobolevn/awesome-cryptography "cryptography resources") on some of the basic concepts in cryptography
 
+If you really like slides and you want way better ones than mine, check this [enormous slide deck from an Intro Cryptography course](http://cseweb.ucsd.edu/classes/sp18/cse127-b/cse127sp18.7.pdf) at UC-San Diego.
+
 #### News articles and why encryption stuff is important
 
 One of the founders of WhatsApp [walked away](https://www.forbes.com/sites/parmyolson/2018/09/26/exclusive-whatsapp-cofounder-brian-acton-gives-the-inside-story-on-deletefacebook-and-why-he-left-850-million-behind/#2fc8726b3f20 "Forbes story on WhatsApp/Facebook controversy") from close to a billion dollars, in part because of a disagreement about who should hold the decryption keys: WhatsApp uses end-to-end (client-side) encryption. That means Facebook can't see WhatsApp messages, and therefore can't monetize them.
@@ -37,3 +39,7 @@ A little walkthrough implementing RSA encryption in R: [Fun with bignum: how RSA
 #### End-to-end encryption
 
 The stylized Alice/Bob/Eve setup doesn't take into account that Alice and Bob may be using some third-party service that connects them, like Gmail, Facebook, or WhatsApp. End-to-end encryption (aka client-side encryption) is an encryption system that doesn't let that third-party service see the contents of messages. The current best-practice system for E2EE is the Signal protocol: [Demystifying the Signal Protocol for End-to-End Encryption](https://blog.cloudboost.io/demystifying-the-signal-protocol-for-end-to-end-encryption-e2ee-3e31830c456f)
+
+#### Man-in-the-middle attacks
+
+MitM attacks are the main reason you don't trust wifi in airports, hotels, etc. When Eve can impersonate Alice and/or Bob and collect (or change) the details of their conversation, she's committing a MitM attack. The security company Rapid7 has a slightly tech-y description of how MITM attack actually happen in the real world and what we're supposed to do about them. [Man-in-the-Middle (MITM) Attacks: Techniques and Prevention](https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/)
