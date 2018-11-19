@@ -5,6 +5,12 @@ I'll use this repo to host presentations, notes, and resource lists as we contin
 
 ## Resources
 
+### Threat models and mental frameworks
+
+Ars Technica's explanation of [why threat models are useful for everyone](https://arstechnica.com/information-technology/2017/07/how-i-learned-to-stop-worrying-mostly-and-love-my-threat-model/ "How I learned to stop worrying (mostly) and love my threat model") is a good introduction to thinking about security.
+
+The 2016 Uber hack is pretty much a perfect model of how to do everything wrong. I'll have a bunch more resources on each piece of this hack, but [How to Prevent the Uber Hack: 5 Defensive Tactics](https://www.hitachi-systems-security.com/blog/how-to-prevent-the-uber-hack/ "How to Prevent the Uber Hack: 5 Defensive Tactics") is a decent place to start.
+
 ### Cryptography
 
 One of the founders of WhatsApp [walked away](https://www.forbes.com/sites/parmyolson/2018/09/26/exclusive-whatsapp-cofounder-brian-acton-gives-the-inside-story-on-deletefacebook-and-why-he-left-850-million-behind/#2fc8726b3f20 "Forbes story on WhatsApp/Facebook controversy") from close to a billion dollars, in part because of a disagreement about who should hold the decryption keys.
