@@ -5,6 +5,7 @@ I'll use this repo to host presentations, notes, and resource lists as we contin
 
 ## Resources
 
+
 ### Threat models and mental frameworks
 
 Ars Technica's explanation of [why threat models are useful for everyone](https://arstechnica.com/information-technology/2017/07/how-i-learned-to-stop-worrying-mostly-and-love-my-threat-model/ "How I learned to stop worrying (mostly) and love my threat model") is a good introduction to thinking about security.
@@ -23,8 +24,8 @@ A news story from November 2018 illustrating how [crypto is hard](https://arstec
 
 #### RSA encryption
 
+RSA is one of the most important asymmetric cryptosystems. [How RSA Works (With Examples)](http://doctrina.org/How-RSA-Works-With-Examples.html)
 
+A somewhat more terse [description of how RSA works](https://blogs.ams.org/mathgradblog/2014/03/30/rsa/ "RSA Encryption – Keeping the Internet Secure")
 
-A somewhat more terse [description](https://blogs.ams.org/mathgradblog/2014/03/30/rsa/ "RSA Encryption – Keeping the Internet Secure")
-
-A little walkthrough implementing RSA encryption [in R](https://cran.r-project.org/web/packages/openssl/vignettes/bignum.html "Fun with bignum: how RSA encryption works")
+A little walkthrough implementing RSA encryption in R: [Fun with bignum: how RSA encryption works](https://cran.r-project.org/web/packages/openssl/vignettes/bignum.html)
