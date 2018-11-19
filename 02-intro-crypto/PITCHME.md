@@ -23,63 +23,55 @@
 
 ---
 
-#### Symmetric encryption
+#### Symmetric encryption (private key cryptography)
 
 @ul
 
 - Example: Alice password-protects a file and emails it to Bob
     - She has to transfer the password "out of band" (over the phone, text message etc.)
--  Not a feasible way to establish trusted sessions with arbitrary partners over the internet
+- Requires a trusted communication channel to share the encryption key
+- Doesn't work for establishing trusted sessions with arbitrary partners over the internet
 
 @ulend
 
 ---
 
-#### Asymmetric encryption
+#### Asymmetric encryption (public key cryptography)
 
 @ul
 
-- Much harder than symmetric encryption, but critical for communication
-- Also called **public key cryptography** 
+- Much harder than symmetric encryption (and usually slower)
 - Each party has a *keypair* consisting of a *private key* and *public key*
 - Plaintext is encrypted using the other party's public key
 - Anything encrypted with a given public key can only be decrypted with the corresponding private key
+- *Still* requires some means of verifying that you're getting the right public key
 
 @ulend
 
 ---
 
-#### Public and private keys
+#### What are these keys, anyway?
 
-
-
-#### Example: TLS workflow for HTTPS connection
-
-```mermaid
-sequenceDiagram
-Participant Client
-Participant Server
-Client --> Server: (Client hello)
-Client ->> Server: "I support TLS versions A,B,C"
-Client ->> Server: "And I support cipher suites 1, 2, 3"
-Server --> Client: (Server hello)
-Server ->> Client: "We'll use TLS version 1.2"
-Server ->> Client: "We'll use cipher suite xyz"
-Server ->> Client: Server certificate
-Note left of Client: Client decides whether it trusts server certificate
-Client --> Server: Client generates symmetric session key
-Client --> Server: Client encrypts session key with server's public key
-Client ->> Server: (encrypted session key)
-
-```
-
-A nice explainer is https://robertheaton.com/2014/03/27/how-does-https-actually-work/
+- There are lots of good explanations of keypair generation, but without going into detail:
+- The RSA cryptosystem takes advantage of the fact that large numbers are hard to factor, especially if their factors are large
+- The public key and private key are generated together using a random seed value
 
 ---
 
-#### Server-side and client-side encryption
+#### Example: TLS workflow for HTTPS connection
 
-A central consideration of any cryptosystem is: who has the decryption keys?
+![https](img/diagram-https.png)
+
+---
+
+#### Digital signatures
+
+- You can also encrypt a message with your private key
+- Only the corresponding public key can decrypt the message
+- If you have a known public key, you can prove you signed something by encrypting it with your private key
+- The receiver decrypts it with your unique public key
+
+#### Server-side and client-side encryption
 
 ---
 
@@ -102,19 +94,36 @@ $ curl -s http://www.textfiles.com/etext/FICTION/mobydick | md5
 
 Hash functions that are useful for cryptography have certain properties:
 
+@ul
+
 - Deterministic: the same input always produces the same hash value
 - Infeasible to reverse: it should not be possible to find a message that returns a given hash value
 - Infeasible to find *hash collisions*, two messages that have the same hash
-- Similar input messages should produce uncorrelated hash values
+- Similar input messages should produce uncorrelated hash values (small changes to a message should result in wildly different hashes)
+
+@ulend
 
 ---
 
 #### Uses for hashing
 
-Hashes are how passwords are 
+- Password checking: a hash of the password is stored, not the password itself
+- Integrity checking: instead of comparing large files, compare their hashes
+- Digital signatures: the message digest is signed with a private key
+
+---
 
 #### Encryption vs. hashing
 
 Encryption is *information-preserving* and *reversible*
 
 Hashing is *information-destroying* and (in principle) *irreversible*
+
+---
+
+#### Hashes are used wrong all the time
+
+- Some common hashes like md5 are too fast
+- GPUs are making hash checking many orders of magnitude faster
+- Common hash functions (e.g., md5) don't include salting, making parallelization more effective
+- This becomes a huge avenue of attack. Come back next time
