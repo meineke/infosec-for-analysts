@@ -1,7 +1,7 @@
 #### This outline is more for my use than anyone else's
 
 1. Baseline threat model: programmatic/mass credential theft
-	- Case study (Adobe hack)
+	- Case study: LinkedIn hack
 	- These affect everybody and need to be part of your threat model
 	- Credential stuffing and phishing (yes, phishing) are the biggest threats
 
@@ -35,7 +35,7 @@
 	- Dictionary attacks and other techniques to reduce the problem space
 	- Password crackers use ML on mass plaintext hacks to learn the patterns people use
 	- This is why the hashing used by the service is so important
-	- The concept of entropy
+	- *Entropy* is a measure of randomness. Higher entropy means less structure. Password cracking works best against lower-entropy passwords
 
 5.  Lessons for good password practices
 	- Forget what you've been told about capital letters, special characters, blah blah
@@ -48,7 +48,7 @@
     - Meeting these requirements for all the services you use is impossible without the use of a password manager
 
 6. How to use a password manager
-	- Why password managers are safer than any other way of doing passwords
+	- Password managers are safer than any other way of doing passwords
 	- Find a reputable one that has the features you want. I'll tell you which one I use (Bitwarden), but look around
 	- (when you're alone and have some time) Generate a random passphrase.  Rules:
 		- Minimum four words and two numbers/specials, or just more words
@@ -84,4 +84,5 @@
 
 9. Phishing
     - You get generic advice about avoiding being phished all the time.
-    - Despite this
+    - Don't discount phishing. It's getting way more advanced
+    - Automated phishing attacks now use data from previous breaches to appear more legitimate

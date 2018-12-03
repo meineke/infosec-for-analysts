@@ -42,4 +42,11 @@ The stylized Alice/Bob/Eve setup doesn't take into account that Alice and Bob ma
 
 #### Man-in-the-middle attacks
 
-MitM attacks are the main reason you don't trust wifi in airports, hotels, etc. When Eve can impersonate Alice and/or Bob and collect (or change) the details of their conversation, she's committing a MitM attack. The security company Rapid7 has a slightly tech-y description of how MITM attack actually happen in the real world and what we're supposed to do about them. [Man-in-the-Middle (MITM) Attacks: Techniques and Prevention](https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/)
+MitM attacks are one of the main reasons you don't trust wifi in airports, hotels, etc. When Eve can impersonate Alice and/or Bob and collect (or change) the details of their conversation, she's committing a MitM attack. The security company Rapid7 has a slightly tech-y description of how MitM attacks actually happen in the real world and what we're supposed to do about them. [Man-in-the-Middle (MITM) Attacks: Techniques and Prevention](https://www.rapid7.com/fundamentals/man-in-the-middle-attacks/)
+
+## End-User Security
+
+### Passwords
+
+Ars Technica's [How I Became a Password Cracker](https://arstechnica.com/information-technology/2013/03/how-i-became-a-password-cracker/) is a 2013 classic that walks through just how easy it is to learn to crack passwords. The follow-up, [Anatomy of a Hack](https://arstechnica.com/information-technology/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/) demonstrates how seemingly good passwords are susceptible.
+
